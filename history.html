@@ -1,12 +1,62 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Decision History · Crop Advisor</title><link rel="stylesheet" href="style.css"></head><body>
-<header class="site"><div class="in"><a class="logo" href="index.html">Crop<b>Advisor</b></a>
-<nav><a href="coverage.html">Coverage Check</a><a href="crops.html">Crops &amp; Packs</a></nav>
-<a class="lang" href="#" aria-label="Switch language">AR | EN</a></div><div class="ribbon"></div></header><main>
-<p class="crumbs"><a href="index.html">My Farms</a> › <a href="farm.html">North Field</a> › History</p>
-<div class="bar"><h1>Decision history</h1><a class="btn" href="farm.html">Request new advice</a></div>
-<p class="banner">! You have 2 decisions where you did not record what you planted.</p><div class="stack"><article class="card"><div class="row" style="justify-content:space-between"><b>12 Mar 2026</b><span class="badge ok">✓ High</span></div><p style="font-size:1.05rem;font-weight:500"><a class="cover" href="decision-detail.html">First: Wheat, then Barley</a></p><div class="row"><span class="badge info">ℹ Local</span><span class="badge warn">! Not recorded yet</span></div><p style="margin:.7rem 0 0"><a class="btn alt sm" href="#record">Record what I planted</a></p></article><article class="card"><div class="row" style="justify-content:space-between"><b>3 Oct 2025</b><span class="badge warn">! Medium</span></div><p style="font-size:1.05rem;font-weight:500"><a class="cover" href="decision-detail.html">Candidate crops: Barley, Lentil +2 more</a></p><div class="row"><span class="badge info">ℹ Local</span><span class="badge ok">✓ You planted: Barley</span></div><p style="margin:.7rem 0 0"><a href="#record">Edit</a></p></article><article class="card"><div class="row" style="justify-content:space-between"><b>20 Mar 2025</b><span class="badge ok">✓ High</span></div><p style="font-size:1.05rem;font-weight:500"><a class="cover" href="decision-detail.html">We advise leaving the land fallow this season</a></p><div class="row"><span class="badge info">ℹ Local</span><span class="badge na">○ You left the land fallow</span></div></article></div><div class="pager"><a class="btn alt sm" href="#" disabled>Previous</a><a class="btn alt sm" href="#">Next</a></div>
-<div class="modal" id="record"><div class="card"><h2>Record what I planted</h2>
-<label class="opt"><input type="radio" name="r"> I planted</label><select aria-label="Crop"><option>Choose a crop</option><option>Wheat</option><option>Barley</option></select>
-<label class="opt"><input type="radio" name="r"> I left the land fallow</label><label class="opt"><input type="radio" name="r"> Another decision</label>
-<div class="row"><a class="btn alt" href="#">Cancel</a><a class="btn go" href="#">Save</a></div></div></div></main><footer>Crop Advisor · Advice is based on recent climate and your farm data.</footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Decision History · Crop Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+    <div class="in"><a class="logo" href="index.html">Crop<b>Advisor</b></a>
+        <nav><a href="coverage.html">Coverage Check</a><a href="crops.html">Crops &amp; Packs</a></nav>
+        <a class="lang" href="#" aria-label="Switch language">AR | EN</a></div>
+    <div class="ribbon"></div>
+</header>
+<main>
+    <p class="crumbs"><a href="index.html">My Farms</a> › <a href="farm.html">North Field</a> › History</p>
+    <div class="bar"><h1>Decision history</h1><a class="btn" href="farm.html">Request new advice</a></div>
+    <p class="banner">! You have 2 decisions where you did not record what you planted.</p>
+    <div class="stack">
+        <article class="card">
+            <div class="row" style="justify-content:space-between"><b>12 Mar 2026</b><span
+                    class="badge ok">✓ High</span></div>
+            <p style="font-size:1.05rem;font-weight:500"><a class="cover" href="decision-detail.html">First: Wheat, then
+                Barley</a></p>
+            <div class="row"><span class="badge info">ℹ Local</span><span class="badge warn">! Not recorded yet</span>
+            </div>
+            <p style="margin:.7rem 0 0"><a class="btn alt sm" href="#record">Record what I planted</a></p></article>
+        <article class="card">
+            <div class="row" style="justify-content:space-between"><b>3 Oct 2025</b><span
+                    class="badge warn">! Medium</span></div>
+            <p style="font-size:1.05rem;font-weight:500"><a class="cover" href="decision-detail.html">Candidate crops:
+                Barley, Lentil +2 more</a></p>
+            <div class="row"><span class="badge info">ℹ Local</span><span class="badge ok">✓ You planted: Barley</span>
+            </div>
+            <p style="margin:.7rem 0 0"><a href="#record">Edit</a></p></article>
+        <article class="card">
+            <div class="row" style="justify-content:space-between"><b>20 Mar 2025</b><span
+                    class="badge ok">✓ High</span></div>
+            <p style="font-size:1.05rem;font-weight:500"><a class="cover" href="decision-detail.html">We advise leaving
+                the land fallow this season</a></p>
+            <div class="row"><span class="badge info">ℹ Local</span><span
+                    class="badge na">○ You left the land fallow</span></div>
+        </article>
+    </div>
+    <div class="pager"><a class="btn alt sm" href="#" disabled>Previous</a><a class="btn alt sm" href="#">Next</a></div>
+    <div class="modal" id="record">
+        <div class="card"><h2>Record what I planted</h2>
+            <label class="opt"><input type="radio" name="r"> I planted</label><select aria-label="Crop">
+                <option>Choose a crop</option>
+                <option>Wheat</option>
+                <option>Barley</option>
+            </select>
+            <label class="opt"><input type="radio" name="r"> I left the land fallow</label><label class="opt"><input
+                    type="radio" name="r"> Another decision</label>
+            <div class="row"><a class="btn alt" href="#">Cancel</a><a class="btn go" href="#">Save</a></div>
+        </div>
+    </div>
+</main>
+<footer>Crop Advisor · Advice is based on recent climate and your farm data.</footer>
+</body>
+</html>

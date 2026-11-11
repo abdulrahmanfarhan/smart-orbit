@@ -1,17 +1,72 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Farm Page · Crop Advisor</title><link rel="stylesheet" href="style.css"></head><body>
-<header class="site"><div class="in"><a class="logo" href="index.html">Crop<b>Advisor</b></a>
-<nav><a href="coverage.html">Coverage Check</a><a href="crops.html">Crops &amp; Packs</a></nav>
-<a class="lang" href="#" aria-label="Switch language">AR | EN</a></div><div class="ribbon"></div></header><main>
-<p class="crumbs"><a href="index.html">My Farms</a> › North Field</p>
-<div class="bar"><h1>North Field</h1><details class="menu"><summary>⋯ Menu</summary><div class="pop"><a href="edit-farm.html">Edit farm</a><a href="#delete">Delete farm</a></div></details></div>
-<div class="grid main"><div class="stack">
-<section class="card hot"><h2>Advice for this season</h2><p>We analyse your location's recent climate and your farm data.</p>
-<div class="row"><a class="btn go" href="advice-result.html">Get advice for this season</a><span class="badge ok">✓ Ranked recommendation</span></div>
-<div class="steps"><span>Fetching climate data</span><span>Applying rules</span><span>Preparing the explanation</span></div></section>
-<section class="card"><h2>Latest decision</h2><div class="row"><b>12 Oct 2026</b><span class="badge ok">✓ High confidence</span></div><p>First: <b>Wheat</b>, then Barley</p><p><span class="badge na">○ Not recorded yet</span></p><a href="decision-detail.html">View decision</a> · <a href="history.html">All history</a></section></div>
-<section class="card"><h2>Farm data</h2><p class="banner">! Complete 2 fields for more accurate advice.</p>
-<dl class="kv"><dt>Name</dt><dd>North Field</dd><dt>Location</dt><dd>31.9522, 35.9334</dd><dt>Elevation</dt><dd>780 m</dd><dt>Irrigation</dt><dd>Limited</dd><dt>Salinity</dt><dd><span class="badge na">○ Not specified</span> <a href="edit-farm.html">Add</a></dd><dt>Soil depth</dt><dd><span class="badge na">○ Not specified</span> <a href="edit-farm.html">Add</a></dd><dt>Previous crop</dt><dd>Wheat</dd><dt>Updated</dt><dd>2 Nov 2026</dd></dl></section></div>
-<div class="modal" id="delete"><div class="card"><h2>Delete “North Field”?</h2>
-<p>This also deletes its <b>3 decisions</b>. This cannot be undone.</p><label for="cf">Type the farm name to confirm</label><input type="text" id="cf" placeholder="North Field">
-<div class="row"><a class="btn alt" href="#">Cancel</a><a class="btn danger" href="index.html">Delete farm</a></div></div></div></main><footer>Crop Advisor · Advice is based on recent climate and your farm data.</footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Farm Page · Crop Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+    <div class="in"><a class="logo" href="index.html">Crop<b>Advisor</b></a>
+        <nav><a href="coverage.html">Coverage Check</a><a href="crops.html">Crops &amp; Packs</a></nav>
+        <a class="lang" href="#" aria-label="Switch language">AR | EN</a></div>
+    <div class="ribbon"></div>
+</header>
+<main>
+    <p class="crumbs"><a href="index.html">My Farms</a> › North Field</p>
+    <div class="bar"><h1>North Field</h1>
+        <details class="menu">
+            <summary>⋯ Menu</summary>
+            <div class="pop"><a href="edit-farm.html">Edit farm</a><a href="#delete">Delete farm</a></div>
+        </details>
+    </div>
+    <div class="grid main">
+        <div class="stack">
+            <section class="card hot"><h2>Advice for this season</h2>
+                <p>We analyse your location's recent climate and your farm data.</p>
+                <div class="row"><a class="btn go" href="advice-result.html">Get advice for this season</a><span
+                        class="badge ok">✓ Ranked recommendation</span></div>
+                <div class="steps"><span>Fetching climate data</span><span>Applying rules</span><span>Preparing the explanation</span>
+                </div>
+            </section>
+            <section class="card"><h2>Latest decision</h2>
+                <div class="row"><b>12 Oct 2026</b><span class="badge ok">✓ High confidence</span></div>
+                <p>First: <b>Wheat</b>, then Barley</p>
+                <p><span class="badge na">○ Not recorded yet</span></p><a href="decision-detail.html">View decision</a>
+                · <a href="history.html">All history</a></section>
+        </div>
+        <section class="card"><h2>Farm data</h2>
+            <p class="banner">! Complete 2 fields for more accurate advice.</p>
+            <dl class="kv">
+                <dt>Name</dt>
+                <dd>North Field</dd>
+                <dt>Location</dt>
+                <dd>31.9522, 35.9334</dd>
+                <dt>Elevation</dt>
+                <dd>780 m</dd>
+                <dt>Irrigation</dt>
+                <dd>Limited</dd>
+                <dt>Salinity</dt>
+                <dd><span class="badge na">○ Not specified</span> <a href="edit-farm.html">Add</a></dd>
+                <dt>Soil depth</dt>
+                <dd><span class="badge na">○ Not specified</span> <a href="edit-farm.html">Add</a></dd>
+                <dt>Previous crop</dt>
+                <dd>Wheat</dd>
+                <dt>Updated</dt>
+                <dd>2 Nov 2026</dd>
+            </dl>
+        </section>
+    </div>
+    <div class="modal" id="delete">
+        <div class="card"><h2>Delete “North Field”?</h2>
+            <p>This also deletes its <b>3 decisions</b>. This cannot be undone.</p><label for="cf">Type the farm name to
+                confirm</label><input type="text" id="cf" placeholder="North Field">
+            <div class="row"><a class="btn alt" href="#">Cancel</a><a class="btn danger" href="index.html">Delete
+                farm</a></div>
+        </div>
+    </div>
+</main>
+<footer>Crop Advisor · Advice is based on recent climate and your farm data.</footer>
+</body>
+</html>

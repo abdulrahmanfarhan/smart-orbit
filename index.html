@@ -1,19 +1,84 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>My Farms · Crop Advisor</title><link rel="stylesheet" href="style.css"></head><body>
-<header class="site"><div class="in"><a class="logo" href="index.html">Crop<b>Advisor</b></a>
-<nav><a href="coverage.html">Coverage Check</a><a href="crops.html">Crops &amp; Packs</a></nav>
-<a class="lang" href="#" aria-label="Switch language">AR | EN</a></div><div class="ribbon"></div></header><main>
-<div class="bar"><div><h1>My Farms</h1><p class="muted">2 farms</p></div><a class="btn" href="add-farm.html">+ Add farm</a></div>
-<div class="grid two"><article class="card farm"><a class="cover" href="farm.html"><h3>North Field</h3>
-<dl class="kv"><dt>Location</dt><dd>31.9522, 35.9334 · 780 m</dd><dt>Irrigation</dt><dd>Limited</dd><dt>Salinity</dt><dd>1.2 dS/m</dd><dt>Previous crop</dt><dd>Wheat</dd><dt>Updated</dt><dd>2 Nov 2026</dd></dl></a>
-<div class="foot"><a class="btn go" href="farm.html">Get advice</a>
-<details class="menu"><summary aria-label="Farm menu">⋯</summary><div class="pop"><a href="edit-farm.html">Edit</a><a href="history.html">Decision history</a><a href="#delete">Delete</a></div></details></div></article>
-<article class="card farm"><a class="cover" href="farm.html"><h3>Unnamed farm #2</h3>
-<dl class="kv"><dt>Location</dt><dd>32.1010, 36.0120</dd><dt>Irrigation</dt><dd><span class="badge na">○ Not specified</span></dd><dt>Salinity</dt><dd><span class="badge na">○ Not specified</span></dd><dt>Previous crop</dt><dd><span class="badge na">○ Not specified</span></dd><dt>Updated</dt><dd>2 Nov 2026</dd></dl></a><p class="banner" style="margin:.8rem 0 0">! Complete the salinity data for more accurate advice. <a href="edit-farm.html">Edit farm</a></p>
-<div class="foot"><a class="btn go" href="farm.html">Get advice</a>
-<details class="menu"><summary aria-label="Farm menu">⋯</summary><div class="pop"><a href="edit-farm.html">Edit</a><a href="history.html">Decision history</a><a href="#delete">Delete</a></div></details></div></article></div>
-<div class="pager"><a class="btn alt sm" href="#" disabled>Previous</a><a class="btn alt sm" href="#">Next</a></div>
-<h2 style="margin-top:2rem">Empty state</h2><div class="card"><p>You have not registered any farm yet.</p><a class="btn" href="add-farm.html">Add your first farm</a> <a class="btn alt" href="coverage.html">Check your location coverage first</a></div>
-<div class="modal" id="delete"><div class="card"><h2>Delete “North Field”?</h2>
-<p>This also deletes its <b>3 decisions</b>. This cannot be undone.</p><label for="cf">Type the farm name to confirm</label><input type="text" id="cf" placeholder="North Field">
-<div class="row"><a class="btn alt" href="#">Cancel</a><a class="btn danger" href="index.html">Delete farm</a></div></div></div></main><footer>Crop Advisor · Advice is based on recent climate and your farm data.</footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>My Farms · Crop Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+    <div class="in"><a class="logo" href="index.html">Smart Orbit</a>
+        <nav><a href="coverage.html">Coverage Check</a><a href="crops.html">Crops &amp; Packs</a></nav>
+        <a class="lang" href="#" aria-label="Switch language">AR | EN</a></div>
+    <div class="ribbon"></div>
+</header>
+<main>
+    <div class="bar">
+        <div><h1>My Farms</h1>
+            <p class="muted">2 farms</p></div>
+        <a class="btn" href="add-farm.html">+ Add farm</a></div>
+    <div class="grid two">
+        <article class="card farm"><a class="cover" href="farm.html"><h3>North Field</h3>
+            <dl class="kv">
+                <dt>Location</dt>
+                <dd>31.9522, 35.9334 · 780 m</dd>
+                <dt>Irrigation</dt>
+                <dd>Limited</dd>
+                <dt>Salinity</dt>
+                <dd>1.2 dS/m</dd>
+                <dt>Previous crop</dt>
+                <dd>Wheat</dd>
+                <dt>Updated</dt>
+                <dd>2 Nov 2026</dd>
+            </dl>
+        </a>
+            <div class="foot"><a class="btn go" href="farm.html">Get advice</a>
+                <details class="menu">
+                    <summary aria-label="Farm menu">⋯</summary>
+                    <div class="pop"><a href="edit-farm.html">Edit</a><a href="history.html">Decision history</a><a
+                            href="#delete">Delete</a></div>
+                </details>
+            </div>
+        </article>
+        <article class="card farm"><a class="cover" href="farm.html"><h3>Unnamed farm #2</h3>
+            <dl class="kv">
+                <dt>Location</dt>
+                <dd>32.1010, 36.0120</dd>
+                <dt>Irrigation</dt>
+                <dd><span class="badge na">○ Not specified</span></dd>
+                <dt>Salinity</dt>
+                <dd><span class="badge na">○ Not specified</span></dd>
+                <dt>Previous crop</dt>
+                <dd><span class="badge na">○ Not specified</span></dd>
+                <dt>Updated</dt>
+                <dd>2 Nov 2026</dd>
+            </dl>
+        </a>
+            <p class="banner" style="margin:.8rem 0 0">! Complete the salinity data for more accurate advice. <a
+                    href="edit-farm.html">Edit farm</a></p>
+            <div class="foot"><a class="btn go" href="farm.html">Get advice</a>
+                <details class="menu">
+                    <summary aria-label="Farm menu">⋯</summary>
+                    <div class="pop"><a href="edit-farm.html">Edit</a><a href="history.html">Decision history</a><a
+                            href="#delete">Delete</a></div>
+                </details>
+            </div>
+        </article>
+    </div>
+    <div class="pager"><a class="btn alt sm" href="#" disabled>Previous</a><a class="btn alt sm" href="#">Next</a></div>
+    <h2 style="margin-top:2rem">Empty state</h2>
+    <div class="card"><p>You have not registered any farm yet.</p><a class="btn" href="add-farm.html">Add your first
+        farm</a> <a class="btn alt" href="coverage.html">Check your location coverage first</a></div>
+    <div class="modal" id="delete">
+        <div class="card"><h2>Delete “North Field”?</h2>
+            <p>This also deletes its <b>3 decisions</b>. This cannot be undone.</p><label for="cf">Type the farm name to
+                confirm</label><input type="text" id="cf" placeholder="North Field">
+            <div class="row"><a class="btn alt" href="#">Cancel</a><a class="btn danger" href="index.html">Delete
+                farm</a></div>
+        </div>
+    </div>
+</main>
+<footer>Crop Advisor · Advice is based on recent climate and your farm data.</footer>
+</body>
+</html>

@@ -1,13 +1,51 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Coverage Check · Crop Advisor</title><link rel="stylesheet" href="style.css"></head><body>
-<header class="site"><div class="in"><a class="logo" href="index.html">Crop<b>Advisor</b></a>
-<nav><a href="coverage.html" class="on">Coverage Check</a><a href="crops.html">Crops &amp; Packs</a></nav>
-<a class="lang" href="#" aria-label="Switch language">AR | EN</a></div><div class="ribbon"></div></header><main>
-<h1>Coverage check</h1><p class="muted">See what kind of advice your location will get, before you register a farm.</p>
-<section class="card" style="margin:1rem 0"><div class="two-col"><div><label for="la">Latitude</label><input type="text" id="la" inputmode="decimal" value="31.9522"></div><div><label for="lo">Longitude</label><input type="text" id="lo" inputmode="decimal" value="35.9334"></div></div>
-<p class="err">Latitude must be between -90 and 90 (example error)</p>
-<div class="row"><a class="btn alt" href="#">◎ Use my current location</a><a class="btn go" href="#">Check</a></div></section>
-<div class="stack"><section class="card" style="border:2px solid var(--sea)"><span class="badge ok">✓ Level 2</span><h2 style="margin-top:.5rem">Full local coverage</h2><p>For your location there is a ranked crop recommendation based on local data.</p><p class="muted">Pack: Jordan Valley Wheat Belt</p><a class="btn" href="add-farm.html?lat=31.9522&lon=35.9334">Register your farm here</a></section>
-<section class="card" style="border:2px solid var(--lime3)"><span class="badge warn">! Level 1</span><h2 style="margin-top:.5rem">General coverage</h2><p>We will show suitable crops for your location without ranking them, because your region's data has not been reviewed locally yet.</p><a class="btn" href="add-farm.html">Register your farm</a></section>
-<section class="card"><span class="badge na">ℹ Level 0</span><h2 style="margin-top:.5rem">No coverage for this location yet</h2><p>You can register your farm and get climate indicators only, without a crop recommendation.</p><a class="btn alt" href="add-farm.html">Register anyway</a></section>
-<details><summary>How to read this result?</summary><p><b>Level 2:</b> ranked crops from local data. <b>Level 1:</b> candidate crops, unranked. <b>Level 0:</b> climate indicators only.</p></details></div></main><footer>Crop Advisor · Advice is based on recent climate and your farm data.</footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Coverage Check · Crop Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+    <div class="in"><a class="logo" href="index.html">Crop<b>Advisor</b></a>
+        <nav><a href="coverage.html" class="on">Coverage Check</a><a href="crops.html">Crops &amp; Packs</a></nav>
+        <a class="lang" href="#" aria-label="Switch language">AR | EN</a></div>
+    <div class="ribbon"></div>
+</header>
+<main>
+    <h1>Coverage check</h1>
+    <p class="muted">See what kind of advice your location will get, before you register a farm.</p>
+    <section class="card" style="margin:1rem 0">
+        <div class="two-col">
+            <div><label for="la">Latitude</label><input type="text" id="la" inputmode="decimal" value="31.9522"></div>
+            <div><label for="lo">Longitude</label><input type="text" id="lo" inputmode="decimal" value="35.9334"></div>
+        </div>
+        <p class="err">Latitude must be between -90 and 90 (example error)</p>
+        <div class="row"><a class="btn alt" href="#">◎ Use my current location</a><a class="btn go" href="#">Check</a>
+        </div>
+    </section>
+    <div class="stack">
+        <section class="card" style="border:2px solid var(--sea)"><span class="badge ok">✓ Level 2</span>
+            <h2 style="margin-top:.5rem">Full local coverage</h2>
+            <p>For your location there is a ranked crop recommendation based on local data.</p>
+            <p class="muted">Pack: Jordan Valley Wheat Belt</p><a class="btn"
+                                                                  href="add-farm.html?lat=31.9522&lon=35.9334">Register
+                your farm here</a></section>
+        <section class="card" style="border:2px solid var(--lime3)"><span class="badge warn">! Level 1</span>
+            <h2 style="margin-top:.5rem">General coverage</h2>
+            <p>We will show suitable crops for your location without ranking them, because your region's data has not
+                been reviewed locally yet.</p><a class="btn" href="add-farm.html">Register your farm</a></section>
+        <section class="card"><span class="badge na">ℹ Level 0</span>
+            <h2 style="margin-top:.5rem">No coverage for this location yet</h2>
+            <p>You can register your farm and get climate indicators only, without a crop recommendation.</p><a
+                    class="btn alt" href="add-farm.html">Register anyway</a></section>
+        <details>
+            <summary>How to read this result?</summary>
+            <p><b>Level 2:</b> ranked crops from local data. <b>Level 1:</b> candidate crops, unranked. <b>Level 0:</b>
+                climate indicators only.</p></details>
+    </div>
+</main>
+<footer>Crop Advisor · Advice is based on recent climate and your farm data.</footer>
+</body>
+</html>
